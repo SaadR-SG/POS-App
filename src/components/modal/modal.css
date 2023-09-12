@@ -1,0 +1,53 @@
+.modal {
+    margin: 0;
+    padding: 2rem;
+    position: fixed;
+    top: 10vh;
+    left: calc(50% - 15rem);
+    width: 30rem;
+    max-height: 80vh;
+    background: #e2e5eb;
+    border: none;
+    border-radius: 6px;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: slide-down-fade-in 300ms ease-out forwards;
+  }
+  
+  .modal::backdrop {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #form label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+    color: #3c4249;
+    text-transform: uppercase;
+  }
+  
+  #form input,
+  #form textarea {
+    font: inherit;
+    font-size: 1.1rem;
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+ }
+
+#btn-div {
+    width:500px;
+}
+
+#btn-div button{
+    display: inline-block;
+}
